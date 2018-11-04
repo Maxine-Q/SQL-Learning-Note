@@ -8,6 +8,52 @@ Organized by Maxine
 
 ## Table of Contents
 
+Table of Contents
+=================
+
+   * [Basic SQL](Basic-SQL)
+      * [Table of Contents](Table-of-Contents)
+      * [Entity Relationship Diagrams](Entity-Relationship-Diagrams)
+         * [What to Notice](What-to-Notice)
+         * [ERD Fundamentals]()
+      * [Indroduction to SQL]()
+         * [Why Do Data Analysts Use SQL?]()
+            * [SQL vs. NoSQL]()
+         * [Why Do Businesses Choose SQL?]()
+            * [Why Businesses Like Databases]()
+      * [Types of Database]()
+         * [SQL Databases]()
+         * [Small Differences]()
+      * [Types of Statements]()
+      * [Formatting Your Queries]()
+         * [Capitalization]()
+         * [Avoid Spaces in Table and Variable Names]()
+         * [Use White Space in Queries]()
+         * [SQL isn't Case Sensitive]()
+         * [Semicolons]()
+      * [Basic Statement]()
+         * [SELECT &amp; FROM]()
+         * [LIMIT]()
+         * [ORDER BY]()
+         * [WHERE]()
+            * [Comparison Operators]()
+         * [Derived Columns]()
+            * [Order of Operations]()
+      * [Logical Operators]()
+         * [LIKE]()
+            * [LIKE Practice]()
+         * [IN]()
+            * [IN Practice]()
+         * [NOT]()
+            * [NOT Practice]()
+         * [AND &amp; BETWEEN]()
+            * [AND &amp; BETWEEN Pratice]()
+         * [OR]()
+            * [OR Practice]()
+      * [Recap]()
+         * [Command]()
+         * [Other Tips](
+
 
 ## Entity Relationship Diagrams
 An **entity relationship diagram** (ERD) is a common way to view data in a database. Below is the ERD for the database we will use from Parch & Posey. These diagrams help you visualize the data you are analyzing including:
