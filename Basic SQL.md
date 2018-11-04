@@ -8,8 +8,8 @@ Organized by Maxine
 
 ## Table of Contents
 
-  * [Entity Relationship Diagrams](#Entity)
-        * [What to Notice](#WhattoNotice) 
+  * [Entity Relationship Diagrams](#Entity-Relationship-Diagrams)
+        ** [What to Notice](#What-to-Notice) 
   * [Screenshot](#screenshot)
   * [Installation](#installation) 
         * [OR using Pathogen:](#or-using-pathogen)
