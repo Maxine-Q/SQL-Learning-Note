@@ -9,10 +9,12 @@ Organized by Maxine
 ## Table of Contents
 
   * [Entity Relationship Diagrams](#Entity-Relationship-Diagrams)
-        ** [What to Notice](#What-to-Notice) 
-  * [Screenshot](#screenshot)
+  	* [What to Notice](#What-to-Notice)
+	* [ERD Fundamentals](ERD-Fundamentals)
+  * [Indroduction to SQL](#Indroduction-to-SQL)
+  	*[Why Do Data Analysts Use SQL?](Why-Do-Data-Analysts-Use-SQL?)
   * [Installation](#installation) 
-        * [OR using Pathogen:](#or-using-pathogen)
+  	* [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
   * [License](#license)
 
@@ -25,7 +27,7 @@ An **entity relationship diagram** (ERD) is a common way to view data in a datab
 
 *You can think of each of the boxes below as a spreadsheet.*
 
-![5d8bc8312455542838c40d8f4472e7cb.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENResource/p581)
+![ERD](https://classroom.udacity.com/nanodegrees/nd104/parts/1954dd2c-6bfd-4d92-b59b-40d6dd298f24/modules/5f969365-1f07-4d5f-a58e-e486e696af01/lessons/eb6e7508-85e7-4501-b4db-af98ac16d822/concepts/63924491-9491-4fb8-b39b-611a613c25fd#)
 
 *Note: glossy_qty is incorrect, it is actually gloss_qty in the database*
 
