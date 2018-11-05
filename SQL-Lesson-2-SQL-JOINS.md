@@ -1,9 +1,9 @@
 # SQL JOINS
 
-**Note Information**:
-
-Provided by Udacity
-Organized by Maxine
+Note Information:
+* Note created by MaxineMann
+* Resources provided by Udacity
+* All queries are stored in the SQL file ([SQL-Lesson-2-SQL-JOINS.sql](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/SQL-Lesson-2-SQL-JOINS.sql))
 
 Table of Content
 ----
