@@ -8,43 +8,43 @@ Note Information:
 Table of Content
 ----
 
-* [Introduction to JOINS]()
-	* [JOINS and ON]()
-            * [JOIN]()
-            * [ON]()
-	* [Database Normalization]()
-	* [JOIN Application]()
-            * [What to Notice]()
-            * [Additional Information]()
-	* [Quiz Questions 1]()
-* [JOIN and Entity Relationship Diagrams]()
-	* [Tables and Columns]()
-	* [Keys]()
-            * [Primary Key (PK)]()
-            * [Foreign Key (FK)]()
-            * [Primary and Foreign Key Link]()
-            * [ERD for the Link Between PK and FK]()
-            * [JOIN More than Two Tables]()
-            * [The Code]()
-* [Alias](#Alias-1)
-	* [Alias for Tables]()
-	* [Aliases for Columns in Resulting Table]()
-* [JOIN Practice 1]()
-	* [Notice]()
-* [JOIN Type]()
-	* [INNER JOINs]()
-            * [LEFT JOIN]()
-            * [RIGHT JOIN]()
-	* [NOTICE]()
-	* [OUTER JOINS]()
-	* [Quiz Questions 2]()
-* [JOIN and Filtering]()
-* [JOIN Practice 2]()
-* [Recap]()
-	* [Primary and Foreign Keys]()
-	* [JOINs]()
-	* [Alias](#Alias-2)
-	* [Looking Ahead]()
+* [Introduction to JOINS](#Introduction-to-JOINS)
+	* [JOINS and ON](#JOINS-and-ON)
+            * [JOIN](#JOIN)
+            * [ON](#ON)
+	* [Database Normalization](#Database-Normalization)
+	* [JOIN Application](#JOIN-Application)
+            * [What to Notice](#What-to-Notice)
+            * [Additional Information](#Additional-Information)
+	* [Quiz Questions 1](#Quiz-Questions-1)
+* [JOIN and Entity Relationship Diagrams](#JOIN-and-Entity-Relationship-Diagrams)
+	* [Tables and Columns](#Tables-and-Columns)
+	* [Keys](#Keys)
+            * [Primary Key](#Primary-Key)
+            * [Foreign Key](#Foreign-Key)
+            * [Primary and Foreign Key Link](#Primary-and-Foreign-Key-Link)
+            * [ERD for the Link Between PK and FK](#ERD-for-the-Link-Between-PK-and-FK)
+            * [JOIN More than Two Tables](#JOIN-More-than-Two-Tables)
+            * [The Code](#The-Code)
+* [Alias](#Alias)
+	* [Alias for Tables](#Alias-for-Tables)
+	* [Aliases for Columns in Resulting Table](#Aliases-for-Columns-in-Resulting-Table)
+* [JOIN Practice 1](#JOIN-Practice-1)
+	* [Practice Notice](#Practice-Notice)
+* [JOIN Type](#JOIN-Type)
+	* [INNER JOINS](#INNER-JOINS)
+            * [LEFT JOIN](#LEFT-JOIN)
+            * [RIGHT JOIN](#RIGHT-JOIN)
+	* [JOIN Type Notice](#JOIN-Type-Notice)
+	* [OUTER JOINS](#OUTER-JOINS)
+	* [Quiz Questions 2](#Quiz-Questions-2)
+* [JOIN and Filtering](#JOIN-and-Filtering)
+* [JOIN Practice 2](#JOIN-Practice 2)
+* [Recap](#Recap)
+	* [Recap Primary and Foreign Keys](#Recap-Primary-and-Foreign-Keys)
+	* [Recap JOINs](#Recap-JOINs)
+	* [Recap Alias](#Recap-Alia)
+	* [Looking Ahead](#Looking-Ahead)
 
 ## Introduction to JOINS
 
@@ -181,13 +181,13 @@ If you look at the first few rows of any of the tables in our database, you will
 
 ### Keys
 
-#### Primary Key (PK)
+#### Primary Key
 
 A primary key is a unique column in a particular table. The primary key is a single column that must exist in each table of a database. Again, these rules are true for most major databases, but some databases may not enforce these rules.
 
 This is the first column in each of our tables. Here, those columns are all called id, but that doesn't necessarily have to be the name. It is common that the primary key is the first column in our tables in most databases.
 
-#### Foreign Key (FK)
+#### Foreign Key
 
 A foreign key is when we see a primary key in another table. We can see these in the previous ERD the foreign keys are provided as:
 
@@ -356,7 +356,7 @@ JOIN orders o
 ON o.account_id = a.id;
 ```
 
-#### Notice
+#### Practice Notice
 
 You have had a bit of an introduction to these **one-to-one** and **one-to-many** relationships when we introduced **PK**s and **FK**s. Notice, traditional databases do not allow for many-to-many relationships, as these break the schema down pretty quickly. A very good answer is provided here.
 
@@ -379,7 +379,7 @@ In addition, there are some statements from the quiz:
 
 The table listed in the FROM statement is considered the left table while the table listed in the LEFT JOIN statement is considered the right table. 
 
-### INNER JOINs
+### INNER JOINS
 
 #### LEFT JOIN
 
@@ -404,7 +404,7 @@ RIGHT JOIN right table
 ![91efd98287f6b18584b550b6d5d8357a.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/Screen%20Shot%202018-11-04%20at%208.33.24%20PM.png)
 
 
-### NOTICE
+### JOIN Type Notice
 The LEFT JOIN and RIGHT JOIN are transferable.
 
 The query:
@@ -634,7 +634,7 @@ ORDER BY o.occurred_at DESC;
 
 ## Recap
 
-### Primary and Foreign Keys
+### Recap Primary and Foreign Keys
 You learned a key element for JOINing tables in a database has to do with primary and foreign keys:
 
 * primary keys - are unique for every row in a table. These are generally the first column in our database (like you saw with the id column for every table in the Parch & Posey database).
@@ -642,7 +642,7 @@ You learned a key element for JOINing tables in a database has to do with primar
 
 Choosing the set up of data in our database is very important, but not usually the job of a data analyst. This process is known as Database Normalization.
 
-### JOINs
+### Recap JOINs
 In this lesson, you learned how to combine data from multiple tables using JOINs. The three JOIN statements you are most likely to use are:
 
 1. JOIN - an INNER JOIN that only pulls data that exists in both tables.
@@ -651,7 +651,7 @@ In this lesson, you learned how to combine data from multiple tables using JOINs
 
 There are a few more advanced JOINs that we did not cover here, and they are used in very specific use cases. [UNION and UNION ALL](https://www.w3schools.com/sql/sql_union.asp), [CROSS JOIN](http://www.w3resource.com/sql/joins/cross-join.php), and the tricky [SELF JOIN](https://www.w3schools.com/sql/sql_join_self.asp). These are more advanced than this course will cover, but it is useful to be aware that they exist, as they are useful in special cases.
 
-### Alias
+### Recap Alias
 
 You learned that you can alias tables and columns using AS or not using it. This allows you to be more efficient in the number of characters you need to write, while at the same time you can assure that your column headings are informative of the data in your table.
 
