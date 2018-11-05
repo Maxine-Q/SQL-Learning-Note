@@ -9,31 +9,31 @@ Table of Contents
 ==============
 
 * [Entity Relationship Diagrams](#Entity-Relationship-Diagrams)
-         * [What to Notice](#What-to-Notice)
-         * [ERD Fundamentals](#ERD-Fundamentals)
+	* [What to Notice](#What-to-Notice)
+	* [ERD Fundamentals](#ERD-Fundamentals)
 * [Indroduction to SQL](#Indroduction-to-SQL)
-         * [Why Do Data Analysts Use SQL?](#Why-Do-Data-Analysts-Use-SQL?)
-            * [SQL vs. NoSQL](#SQL-vs.-NoSQL)
-         * [Why Do Businesses Choose SQL?](#Why-Do-Businesses-Choose-SQL?)
-            * [Why Businesses Like Databases](#Why-Businesses-Like-Databases)
+	* [Why Do Data Analysts Use SQL?](#Why-Do-Data-Analysts-Use-SQL?)
+    	* [SQL vs. NoSQL](#SQL-vs.-NoSQL)
+	* [Why Do Businesses Choose SQL?](#Why-Do-Businesses-Choose-SQL?)
+        * [Why Businesses Like Databases](#Why-Businesses-Like-Databases)
 * [Types of Database]()
-         * [SQL Databases]()
-         * [Small Differences]()
+    * [SQL Databases]()
+    * [Small Differences]()
 * [Types of Statements]()
 * [Formatting Your Queries]()
-         * [Capitalization]()
-         * [Avoid Spaces in Table and Variable Names]()
-         * [Use White Space in Queries]()
-         * [SQL isn't Case Sensitive]()
-         * [Semicolons]()
+    * [Capitalization]()
+    * [Avoid Spaces in Table and Variable Names]()
+	* [Use White Space in Queries]()
+    * [SQL isn't Case Sensitive]()
+    * [Semicolons]()
 * [Basic Statement]()
-         * [SELECT & FROM](#SELECT-&-FROM)
-         * [LIMIT](#LIMIT)
-         * [ORDER BY](#ORDER-BY)
-         * [WHERE](#WHERE)
-            * [Comparison Operators]()
-         * [Derived Columns]()
-            * [Order of Operations]()
+    * [SELECT & FROM](#SELECT-&-FROM)
+    * [LIMIT](#LIMIT)
+    * [ORDER BY](#ORDER-BY)
+    * [WHERE](#WHERE)
+         * [Comparison Operators]()
+    * [Derived Columns]()
+         * [Order of Operations]()
 * [Logical Operators]()
      * [LIKE]()
           * [LIKE Practice]()
@@ -59,7 +59,7 @@ An **entity relationship diagram** (ERD) is a common way to view data in a datab
 
 *You can think of each of the boxes below as a spreadsheet.*
 
-[Pic]
+![Pic](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/erd.png)
 
 *Note: glossy_qty is incorrect, it is actually gloss_qty in the database*
 
@@ -75,7 +75,7 @@ In the Parch & Posey database there are five tables (essentially 5 spreadsheets)
 
 You can think of each of these tables as an individual spreadsheet. Then the columns in each spreadsheet are listed below the table name. For example, the **region** table has two columns: `id` and `name`. Alternatively the **web_events** table has four columns.
 
-[pic]
+![pic](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/screen-shot-2017-08-04-at-6.41.07-pm.png)
 
 The "crow's foot" that connects the tables together shows us how the columns in one table relate to the columns in another table.  In this first lesson, you will be learning the basics of how to work with SQL to interact with a single table.  In the next lesson, you will learn more about why these connections are so important for working with SQL and relational databases.
 
