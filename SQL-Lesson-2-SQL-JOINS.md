@@ -12,7 +12,7 @@ Table of Content
 
 ## Introduction to JOINS
 
-### JOINS & ON
+### JOINS and ON
 
 You will notice, we have introduced two new parts to our regular queries: **JOIN** and **ON**. The **JOIN** introduces the second table from which you would like to pull data, and the **ON** tells you how you would like to merge the tables in the FROM and JOIN statements together.
 
@@ -107,7 +107,7 @@ ON orders.account_id = accounts.id;
 
 Joining tables allows you access to each of the tables in the **SELECT** statement through the table name, and the columns will always follow a "." after the table name.
 
-### Quiz Questions #1
+### Quiz Questions 1
 
 1. Try pulling all the data from the accounts table, and all the data from the orders table.
 ```
@@ -125,9 +125,9 @@ JOIN accounts
 ON orders.account_id = accounts.id;
 ```
 
-## JOIN & Entity Relationship Diagrams
+## JOIN and Entity Relationship Diagrams
 
-### Tables & Columns
+### Tables and Columns
 
 In the Parch & Posey database there are 5 tables:
 
@@ -160,7 +160,7 @@ A foreign key is when we see a primary key in another table. We can see these in
 3. sales_rep_id
 
 
-#### Primary - Foreign Key Link
+#### Primary and Foreign Key Link
 
 Each of **Foreign Key** is linked to the **Primary Key** of another table. An example is shown in the image below:
 
@@ -406,7 +406,7 @@ You can see examples of outer joins at the link [here](http://www.w3resource.com
 
 Similar to the above, you might see the language `FULL OUTER JOIN`, which is the same as `OUTER JOIN`.
 
-### Quiz Questions #2
+### Quiz Questions 2
 
 ![a70626b9073cf051c51b4f2ff2a3ea59.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=a70626b9073cf051c51b4f2ff2a3ea59)
 
@@ -493,26 +493,107 @@ The fact that this example is a left join is important. Because inner joins only
 
 1. Provide a table that provides the region for each sales_rep along with their associated accounts. This time only for the Midwest region. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name.
 
+```
+SELECT r.name region, s.name rep, a.name account
+FROM sales_reps s
+JOIN region r
+ON s.region_id = r.id
+JOIN accounts a
+ON a.sales_rep_id = s.id
+WHERE r.name = 'Midwest'
+ORDER BY a.name;
+```
 
 2. Provide a table that provides the region for each sales_rep along with their associated accounts. This time only for accounts where the sales rep has a first name starting with S and in the Midwest region. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name. 
 
+```
+SELECT r.name region, s.name rep, a.name account
+FROM sales_reps s
+JOIN region r
+ON s.region_id = r.id
+JOIN accounts a
+ON a.sales_rep_id = s.id
+WHERE r.name = 'Midwest' AND s.name LIKE 'S%'
+ORDER BY a.name;
+```
 
 3. Provide a table that provides the region for each sales_rep along with their associated accounts. This time only for accounts where the sales rep has a last name starting with K and in the Midwest region. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name.
 
+```
+SELECT r.name region, s.name rep, a.name account
+FROM sales_reps s
+JOIN region r
+ON s.region_id = r.id
+JOIN accounts a
+ON a.sales_rep_id = s.id
+WHERE r.name = 'Midwest' AND s.name LIKE '% K%'
+ORDER BY a.name;
+```
 
 4. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. However, you should only provide the results if the standard order quantity exceeds 100. Your final table should have 3 columns: region name, account name, and unit price. In order to avoid a division by zero error, adding .01 to the denominator here is helpful total_amt_usd/(total+0.01). 
 
+```
+SELECT r.name region, a.name account, o.total_amt_usd/(o.total + 0.01) unit_price
+FROM region r
+JOIN sales_reps s
+ON s.region_id = r.id
+JOIN accounts a
+ON a.sales_rep_id = s.id
+JOIN orders o
+ON o.account_id = a.id
+WHERE o.standard_qty > 100;
+```
 
 5. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. However, you should only provide the results if the standard order quantity exceeds 100 and the poster order quantity exceeds 50. Your final table should have 3 columns: region name, account name, and unit price. Sort for the smallest unit price first. In order to avoid a division by zero error, adding .01 to the denominator here is helpful (total_amt_usd/(total+0.01). 
 
+```
+SELECT r.name region, a.name account, o.total_amt_usd/(o.total + 0.01) unit_price
+FROM region r
+JOIN sales_reps s
+ON s.region_id = r.id
+JOIN accounts a
+ON a.sales_rep_id = s.id
+JOIN orders o
+ON o.account_id = a.id
+WHERE o.standard_qty > 100 AND o.poster_qty > 50
+ORDER BY unit_price;
+```
 
 6. Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. However, you should only provide the results if the standard order quantity exceeds 100 and the poster order quantity exceeds 50. Your final table should have 3 columns: region name, account name, and unit price. Sort for the largest unit price first. In order to avoid a division by zero error, adding .01 to the denominator here is helpful (total_amt_usd/(total+0.01). 
 
+```
+SELECT r.name region, a.name account, o.total_amt_usd/(o.total + 0.01) unit_price
+FROM region r
+JOIN sales_reps s
+ON s.region_id = r.id
+JOIN accounts a
+ON a.sales_rep_id = s.id
+JOIN orders o
+ON o.account_id = a.id
+WHERE o.standard_qty > 100 AND o.poster_qty > 50
+ORDER BY unit_price DESC;
+```
 
 7. What are the different channels used by account id 1001? Your final table should have only 2 columns: account name and the different channels. You can try SELECT DISTINCT to narrow down the results to only the unique values.
 
+```
+SELECT DISTINCT a.name, w.channel
+FROM accounts a
+JOIN web_events w
+ON a.id = w.account_id
+WHERE a.id = '1001';
+```
 
 8. Find all the orders that occurred in 2015. Your final table should have 4 columns: occurred_at, account name, order total, and order total_amt_usd.
+
+```
+SELECT o.occurred_at, a.name, o.total, o.total_amt_usd
+FROM accounts a
+JOIN orders o
+ON o.account_id = a.id
+WHERE o.occurred_at BETWEEN '01-01-2015' AND '01-01-2016'
+ORDER BY o.occurred_at DESC;
+```
 
 ## Recap
 
