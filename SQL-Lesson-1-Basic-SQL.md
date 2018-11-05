@@ -12,9 +12,9 @@ Table of Contents
 	* [What to Notice](#What-to-Notice)
 	* [ERD Fundamentals](#ERD-Fundamentals)
 * [Indroduction to SQL](#Indroduction-to-SQL)
-	* [Why Do Data Analysts Use SQL?](#Why-Do-Data-Analysts-Use-SQL?)
-    	* [SQL vs. NoSQL](#SQL-vs.-NoSQL)
-	* [Why Do Businesses Choose SQL?](#Why-Do-Businesses-Choose-SQL?)
+	* [Why Do Data Analysts Use SQL](#Why-Do-Data-Analysts-Use-SQL)
+    	* [SQL vs NoSQL](#SQL-vs-NoSQL)
+	* [Why Do Businesses Choose SQL](#Why-Do-Businesses-Choose-SQL)
         * [Why Businesses Like Databases](#Why-Businesses-Like-Databases)
 * [Types of Database](#Types-of-Database)
     * [SQL Databases](#SQL-Databases)
@@ -24,10 +24,10 @@ Table of Contents
     * [Capitalization](#Capitalization)
     * [Avoid Spaces in Table and Variable Names](#Avoid-Spaces-in-Table-and-Variable-Names)
 	* [Use White Space in Queries](#Use-White-Space-in-Queries)
-    * [SQL isn't Case Sensitive](#SQL-isn't-Case-Sensitive)
+    * [SQL is not Case Sensitivee](#SQL-is-not-Case-Sensitive)
     * [Semicolons](#Semicolons)
 * [Basic Statement](#Basic-Statement)
-    * [SELECT & FROM](#SELECT-&-FROM)
+    * [SELECT and FROM](#SELECT-and-FROM)
     * [LIMIT](#LIMIT)
     * [ORDER BY](#ORDER-BY)
     * [WHERE](#WHERE)
@@ -41,8 +41,8 @@ Table of Contents
           * [IN Practice](#IN-Practice)
      * [NOT](#NOT)
           * [NOT Practice](#NO-Practice)
-     * [AND & BETWEEN](#AND-&-BETWEEN)
-          * [AND & BETWEEN Pratice](#AND-&-BETWEEN-Practice)
+     * [AND and BETWEEN](#AND-and-BETWEEN)
+          * [AND and BETWEEN Pratice](#AND-and-BETWEEN-Practice)
      * [OR](#OR)
           * [OR Practice](#OR-Practice)
 * [Recap](#Recap)
@@ -93,7 +93,7 @@ Before we dive into writing **Structured Query Language** (SQL) queries, let's t
 
 I think it is an important distinction to say that SQL is a **language**. Hence, the last word of SQ**L** being **language**. SQL is used all over the place beyond the databases we will utilize in this class. With that being said, SQL is most popular for its interaction with databases. For this class, you can think of a **database** as a bunch of excel spreadsheets all sitting in one place. Not all databases are a bunch of excel spreadsheets sitting in one place, but it is a reasonable idea for this class.
 
-### Why Do Data Analysts Use SQL?
+### Why Do Data Analysts Use SQL
 
 There are some major advantages to using **traditional relational databases**, which we interact with using SQL. The five most apparent are:
 
@@ -107,13 +107,13 @@ You will experience these advantages first hand, as we learn to write SQL to int
 
 I realize you might be getting a little nervous or anxious to start writing code. This might even be the first time you have written in any sort of programming language. I assure you, we will work through examples to help assure you feel supported the whole time to take on this new challenge!
 
-#### SQL vs. NoSQL
+#### SQL vs NoSQL
 
 You may have heard of NoSQL, which stands for not only SQL. Databases using NoSQL allow for you to write code that interacts with the data a bit differently than what we will do in this course. These NoSQL environments tend to be particularly popular for <u>web based data</u>, but less popular for data that lives in spreadsheets the way we have been analyzing data up to this point. One of the most popular NoSQL languages is called MongoDB. Udacity has a full course on [MongoDB](https://www.mongodb.com/) that you can take for free [here](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032), but these will not be a focus of this program.
 
 NoSQL is not a focus of analyzing data in this Nanodegree program, but you might see it referenced outside this course!
 
-### Why Do Businesses Choose SQL?
+### Why Do Businesses Choose SQL
 
 #### Why Businesses Like Databases
 
@@ -198,7 +198,7 @@ SELECT     account_id
     FROM      orders
 ```
 
-### SQL isn't Case Sensitive
+### SQL is not Case Sensitive
 
 If you have programmed in other languages, you might be familiar with programming languages that get very upset if you do not type the correct characters in terms of lower and uppercase. SQL is not case sensitive. The following query:
 
@@ -243,7 +243,7 @@ select account_id
 
 ## Basic Statement
 
-### SELECT & FROM
+### SELECT and FROM
 
 * SELECT indicates which column(s) you want to be given the data for (filling out a form to get a set of results)
 * FROM specifies from which table(s) you want to select the columns. Notice the columns need to exist in this table.
@@ -455,7 +455,7 @@ FROM web_events
 WHERE channel NOT IN ('organic', 'adwords');
 ```
 
-### AND & BETWEEN
+### AND and BETWEEN
 
 The **AND** operator is used within a **WHERE** statement to consider more than one logical clause at a time. Each time you link a new statement with an **AND**, you will need to specify the column you are interested in looking at. You may link as many statements as you would like to consider at the same time. This operator works with all of the operations we have seen so far including arithmetic operators (`+`, `*`, `-`, `/`). LIKE, IN, and NOT logic can also be linked together using the AND operator.
 
@@ -467,7 +467,7 @@ we can instead write, equivalently:
 
 `WHERE column BETWEEN 6 AND 10`
  
-#### AND & BETWEEN Pratice
+#### AND and BETWEEN Pratice
 
 1. Write a query that returns all the orders where the standard_qty is over 1000, the poster_qty is 0, and the gloss_qty is 0.
 ```
