@@ -1,8 +1,9 @@
 # Basic SQL
 
-| Note created by MaxineMann | Resources provided by Udacity |
-
-**Note Information**: All queries are stored in the SQL file ([SQL-Lesson-1-Basic-SQL.sql](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/SQL-Lesson-1-Basic-SQL.sql))
+Note Information:
+* Note created by MaxineMann
+* Resources provided by Udacity
+* All queries are stored in the SQL file ([SQL-Lesson-1-Basic-SQL.sql](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/SQL-Lesson-1-Basic-SQL.sql))
 
 Table of Contents
 ==============
@@ -40,11 +41,11 @@ The "crow's foot" that connects the tables together shows us how the columns in 
 
 ### ERD Fundamentals
 
-**primary_poc**: A column name in the Parch & Posey database.
-**web_events**: A table name in the Parch & Posey database.
-**Database**: A collection of tables that share connected data stored in a computer.
-**ERD**: A diagram that shows how data is structured in a database.
-**SQL**: A language that allows us to access data stored in a database.
+* **primary_poc**: A column name in the Parch & Posey database.
+* **web_events**: A table name in the Parch & Posey database.
+* **Database**: A collection of tables that share connected data stored in a computer.
+* **ERD**: A diagram that shows how data is structured in a database.
+* **SQL**: A language that allows us to access data stored in a database.
 
 ## Indroduction to SQL
 
