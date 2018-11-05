@@ -472,6 +472,7 @@ Match the results of the query to the description.
 We have a column for each of the identified elements in our SELECT statement. We will have all of the same rows as in a JOIN statement, but we also will obtain the additional two rows in the Country table that are not in the State table for Sri Lanka and Brazil.
 
 **4. Flip LEFT JOIN**
+
 If we were to flip the tables, we would actually obtain the same exact result as the JOIN statement:
 
 ```
