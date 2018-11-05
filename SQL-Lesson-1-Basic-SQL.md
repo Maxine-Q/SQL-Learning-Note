@@ -1,10 +1,8 @@
 # Basic SQL
 
-**Note Information**:
+| Note created by MaxineMann | Resources provided by Udacity |
 
-Provided by Udacity
-Organized by Maxine
-
+**Note Information**: All queries are stored in the SQL file ([SQL-Lesson-1-Basic-SQL.sql](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/SQL-Lesson-1-Basic-SQL.sql))
 
 Table of Contents
 ==============
