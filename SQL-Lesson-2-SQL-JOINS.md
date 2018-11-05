@@ -52,7 +52,7 @@ However, most analysts are working with a database that was already set up with 
 
 Using the following ERD:
 
-![059af1b9231ee35efb916d566c4d5722.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=059af1b9231ee35efb916d566c4d5722)
+![059af1b9231ee35efb916d566c4d5722.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/erd.png)
 
 ```
 /* Example */
@@ -164,7 +164,7 @@ A foreign key is when we see a primary key in another table. We can see these in
 
 Each of **Foreign Key** is linked to the **Primary Key** of another table. An example is shown in the image below:
 
-![b739bf3e4634f98908cfc5df136c9da4.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=b739bf3e4634f98908cfc5df136c9da4)
+![b739bf3e4634f98908cfc5df136c9da4.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/screen-shot-2017-08-10-at-8.23.48-pm.png)
 
 In the above image you can see that:
 
@@ -188,7 +188,7 @@ JOIN accounts
 ON orders.account_id = accounts.id;
 ```
 
-![dafa784d23c7b81a622ddf4d32ec772a.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=dafa784d23c7b81a622ddf4d32ec772a)
+![dafa784d23c7b81a622ddf4d32ec772a.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/screen-shot-2017-08-11-at-11.54.30-am.png)
 
 If we wanted to join the `sales_reps` and `region` tables together:
 
@@ -196,13 +196,13 @@ If we wanted to join the `sales_reps` and `region` tables together:
 ON sales_reps.region_id = region.id
 ```
 
-![f772f725e47e308fa3d098a4e0622ebb.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=f772f725e47e308fa3d098a4e0622ebb)
+![f772f725e47e308fa3d098a4e0622ebb.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/screen-shot-2017-08-10-at-8.10.13-pm.png)
 
 #### JOIN More than Two Tables
 
 This same logic can actually assist in joining more than two tables together. Look at the three tables below.
 
-![7266ce0db5af4e83633b037bac8a210a.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=7266ce0db5af4e83633b037bac8a210a)
+![7266ce0db5af4e83633b037bac8a210a.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/screen-shot-2017-08-11-at-3.21.34-pm.png)
 
 #### The Code
 
@@ -282,7 +282,7 @@ We can simply write our alias directly after the column name (in the **SELECT**)
 
 ## JOIN Practice 
 
-![059af1b9231ee35efb916d566c4d5722.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=059af1b9231ee35efb916d566c4d5722)
+![059af1b9231ee35efb916d566c4d5722.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/erd.png)
 
 1. Provide a table for all web_events associated with account name of Walmart. There should be three columns. Be sure to include the primary_poc, time of the event, and the channel for each event. Additionally, you might choose to add a fourth column to assure only Walmart events were chosen. 
 
@@ -354,7 +354,7 @@ SELECT
 FROM left table
 LEFT JOIN right table
 ```
-![e1d125319ec22ce07ccdfa7949fac172.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENResource/p591)
+![e1d125319ec22ce07ccdfa7949fac172.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/Screen%20Shot%202018-11-04%20at%208.33.47%20PM.png)
 
 #### RIGHT JOIN
 
@@ -365,7 +365,7 @@ SELECT
 FROM left table
 RIGHT JOIN right table
 ```
-![91efd98287f6b18584b550b6d5d8357a.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENResource/p590)
+![91efd98287f6b18584b550b6d5d8357a.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/Screen%20Shot%202018-11-04%20at%208.33.24%20PM.png)
 
 
 ### NOTICE
@@ -408,7 +408,7 @@ Similar to the above, you might see the language `FULL OUTER JOIN`, which is the
 
 ### Quiz Questions 2
 
-![a70626b9073cf051c51b4f2ff2a3ea59.png](evernotecid://A0FC40C3-A287-4CAC-A86B-1EAFFA30CF3A/appyinxiangcom/10567866/ENNote/p170?hash=a70626b9073cf051c51b4f2ff2a3ea59)
+![a70626b9073cf051c51b4f2ff2a3ea59.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/screen-shot-2017-08-14-at-1.12.55-pm.png)
 
 Above are two small tables for you to test your knowledge of JOINs. You can click on the image to get a better view.
 
