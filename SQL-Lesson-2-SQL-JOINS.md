@@ -8,7 +8,43 @@ Note Information:
 Table of Content
 ----
 
-
+* [Introduction to JOINS]()
+	* [JOINS and ON]()
+            * [JOIN]()
+            * [ON]()
+	* [Database Normalization]()
+	* [JOIN Application]()
+            * [What to Notice]()
+            * [Additional Information]()
+	* [Quiz Questions 1]()
+* [JOIN and Entity Relationship Diagrams]()
+	* [Tables and Columns]()
+	* [Keys]()
+            * [Primary Key (PK)]()
+            * [Foreign Key (FK)]()
+            * [Primary and Foreign Key Link]()
+            * [ERD for the Link Between PK and FK]()
+            * [JOIN More than Two Tables]()
+            * [The Code]()
+* [Alias](#Alias-1)
+	* [Alias for Tables]()
+	* [Aliases for Columns in Resulting Table]()
+* [JOIN Practice 1]()
+	* [Notice]()
+* [JOIN Type]()
+	* [INNER JOINs]()
+            * [LEFT JOIN]()
+            * [RIGHT JOIN]()
+	* [NOTICE]()
+	* [OUTER JOINS]()
+	* [Quiz Questions 2]()
+* [JOIN and Filtering]()
+* [JOIN Practice 2]()
+* [Recap]()
+	* [Primary and Foreign Keys]()
+	* [JOINs]()
+	* [Alias](#Alias-2)
+	* [Looking Ahead]()
 
 ## Introduction to JOINS
 
@@ -280,7 +316,7 @@ The alias name fields will be what shows up in the returned table instead of `t1
 
 We can simply write our alias directly after the column name (in the **SELECT**) or table name (in the **FROM** or **JOIN**) by writing the alias directly following the column or table we would like to alias. This will allow you to create clear column names even if calculations are used to create the column, and you can be more efficient with your code by aliasing table names.
 
-## JOIN Practice 
+## JOIN Practice 1
 
 ![059af1b9231ee35efb916d566c4d5722.png](https://github.com/MaxineMann/SQL-Learning-Note/blob/master/image/erd.png)
 
@@ -490,7 +526,7 @@ A simple rule to remember this is that, when the database executes this query, i
 
 The fact that this example is a left join is important. Because inner joins only return the rows for which the two tables match, moving this filter to the ON clause of an inner join will produce the same result as keeping it in the WHERE clause.
 
-## JOIN Practice
+## JOIN Practice 2
 
 1. Provide a table that provides the region for each sales_rep along with their associated accounts. This time only for the Midwest region. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name.
 
