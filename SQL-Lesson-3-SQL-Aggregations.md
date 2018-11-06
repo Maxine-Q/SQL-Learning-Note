@@ -7,7 +7,32 @@ Note Information:
 
 Table of Contents
 ---
-[TOC]
+
+* [Introduction to Aggregation](#Introduction-to-Aggregation)
+  * [Nulls](#Nulls)
+  * [COUNT](#COUNT)
+  * [SUM](#SUM)
+     * [SUM Practice](#SUM-Practice)
+  * [MIN MAX AVG](#MIN-MAX-AVG)
+     * [MIN and MAX](#MIN-and-MAX)
+     * [AVG](#AVG)
+     * [MEDIAN](#MEDIAN)
+     * [MIN MAX AVG Practice](#MIN-MAX-AVG-Practice)
+  * [GROUP BY](#GROUP-BY)
+     * [GROUP BY Practice 1](#GROUP-BY-Practice-1)
+     * [Further Knowledge about GROUP BY](#Further-Knowledge-about-GROUP-BY)
+     * [GROUP BY Practice 2](#GROUP-BY-Practice 2)
+  * [DISTINCT](#DISTINCT)
+     * [DISTINCT Practice](#DISTINCT-Practice)
+  * [HAVING](#HAVING)
+     * [HAVING Practice](#HAVING-Practice)
+  * [DATE Functions](#DATE-Functions)
+     * [DATE TRUNC and DATE PART](#DATE-TRUNC-and-DATE-PART)
+     * [DATE Practice](#DATE-Practice)
+  * [CASE](#CASE)
+     * [CASE Practice](#CASE-Practice)
+  * [Aggregation Reminder](#Aggregation-Reminder)
+* [RECAP](#RECAP)
 
 ## Introduction to Aggregation
 
