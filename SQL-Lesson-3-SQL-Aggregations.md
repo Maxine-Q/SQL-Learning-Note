@@ -21,7 +21,7 @@ Table of Contents
   * [GROUP BY](#GROUP-BY)
      * [GROUP BY Practice 1](#GROUP-BY-Practice-1)
      * [Further Knowledge about GROUP BY](#Further-Knowledge-about-GROUP-BY)
-     * [GROUP BY Practice 2](#GROUP-BY-Practice 2)
+     * [GROUP BY Practice 2](#GROUP-BY-Practice-2)
   * [DISTINCT](#DISTINCT)
      * [DISTINCT Practice](#DISTINCT-Practice)
   * [HAVING](#HAVING)
