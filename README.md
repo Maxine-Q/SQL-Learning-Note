@@ -1,6 +1,7 @@
 # SQL-Learning-Note
 
 Udacity Programming for Data Science Program
+
 State Date: 10/26/2018
 
 * Note created by MaxineMann
